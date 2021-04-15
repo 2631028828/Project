@@ -1,13 +1,6 @@
 ## Welcome to yxd137's Pages
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
 # 推箱子个人代码
+#头文件导入
 #include <iostream>
 #include<queue>
 using namespace std;
@@ -18,6 +11,7 @@ queue<int>q;
 int n2, m2;
 int n3, m3;
 int n, m;
+##定义数组来存储移动位置
 int  people[4][2] =
 {
   {-1,0},
@@ -33,6 +27,7 @@ int OutMap(int a, int b)
 	else
 		return 1;
 }
+###广度优先搜索算法
 int bfs()
 {
 	int p1, p2, x1, x2;
@@ -88,6 +83,8 @@ int bfs()
 	}
 	return -1;
 }
+
+####主函数及其测试
 int main()
 {
 	cin >> n >> m;
@@ -112,26 +109,3 @@ int main()
 	k = bfs();
 	cout << k;
 }
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/2631028828/Project/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
